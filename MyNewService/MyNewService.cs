@@ -22,7 +22,7 @@ namespace MyNewService
         {
             InitializeComponent();
             eventLog1 = new EventLog();
-            if (!EventLog.SourceExists("MySource"))
+                if (!EventLog.SourceExists("MySource"))
             {
                 EventLog.CreateEventSource(
                     "MySource", "MyNewLog");
